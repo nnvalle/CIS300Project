@@ -1,15 +1,23 @@
 header {
-    background-color: #cac3f9;
-    color: #040316;
+    background-image: url(yarnHero.jpg);
+
+    background-size: cover;
+    color: #cac3f9;
+    text-shadow: 4px 4px #620d8d;
     text-align: center;
+    padding: 50px;
+    font-size: 200%;
+    letter-spacing: 2px;
 }
 
 nav {
     font-weight: bold;
-    padding: 0;
+    padding: 15px;
     font-size: 120%;
     text-align: center;
     background-color: #ede193;
+    letter-spacing: 2px;
+
 }
 
 nav ul {
@@ -17,6 +25,7 @@ nav ul {
     margin: 0%;
     padding-left: 0%;
     font-size: 1.2em;
+
 }
 
 nav a {
@@ -28,7 +37,7 @@ nav a:link {
 }
 
 nav a:visited {
-    color: #000000;
+    color: #040316;
 }
 
 nav a:hover {
@@ -41,15 +50,211 @@ nav li {
 
 body {
     background-color: #ffffff;
-    color: #edb6e3;
+    color: #000000;
+    font-family: Georgia, "Times New Roman", Times, serif;
+
 }
 
 h1 {
     margin-bottom: 0;
 }
+
 #yarnhero {
     height: 250px;
     background-image: url(yarnHero.jpg);
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+}
+
+#wrapper {
+    width: 90%;
+    max-width: 1800px;
+    margin: 25px auto;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 12px #888888;
+}
+
+section {
+    margin-right: 2em;
+    margin-left: 2em;
+    flex: 1;
+}
+
+.flow {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+footer {
+    background-color: #ede193;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
+    font-family: inherit;
+}
+
+
+footer p:first-child {
+    margin-bottom: 8px;
+    font-size: 1.05em;
+}
+
+footer a {
+    color: #000000;
+
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+footer a:hover {
+    color: #edb6e3;
+    text-decoration: underline;
+}
+
+footer p:last-child {
+    margin: 0;
+    font-size: 0.9em;
+    color: #4a4a4a;
+
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.card {
+    background-color: #CAC3F9;
+    border-radius: 16px;
+    padding: 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h2 {
+    color: #FFFFFF;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card p {
+    color: #333333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+table {
+    border: 2px solid #edb6e3;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 80%;
+}
+
+td {
+    padding: 0.5em;
+    border: 2px solid #edb6e3;
+    text-align: center;
+}
+
+th {
+    padding: 0.5em;
+    border: 2px solid #edb6e3;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #edb6e3;
+}
+
+tr {
+    color: #000000;
+}
+
+.textLeft {
+    text-align: left;
+
+}
+
+.textCenter {
+    text-align: center;
+    color: #000000;
+}
+
+.yarnlabel {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 3em;
+    border: 6px solid #edb6e3;
+    border-radius: 10px;
+}
+
+.yarnTopLabelInfo {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+.yarnlabelText {
+    font-size: 1.2em;
+    color: #000000;
+    text-align: left;
+    line-height: 1.5;
+    font-weight: normal;
+}
+main h2 {
+    margin-left : 1em;
+
+}
+main li::marker {
+    color: #620d8d;
+}
+video {
+    border: 4px solid #620d8d;
+    border-radius: 10px;
+    margin-left: 1em;
+}
+.supplies-image {
+    width: 480px;
+    height: 380px;
+    object-fit: cover;
+
+    border: 6px solid #620d8d;
+    border-radius: 10px;
+}
+.hooks-image {
+    width: 450px;
+    height: 380px;
+    border: 6px solid #620d8d;
+    border-radius: 10px;
+}
+* {
+    box-sizing: border-box;
+
 }
